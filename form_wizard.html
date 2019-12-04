@@ -7,15 +7,14 @@
     <title></title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
     <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
-
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body class="top-navigation md-skin">
     <div id="wrapper">
-
         <div id="page-wrapper" class="gray-bg">
             <div class="row border-bottom white-bg">
                 <nav class="navbar navbar-expand-lg navbar-static-top" role="navigation">
@@ -35,7 +34,6 @@
                                     Create
                                 </a>
                                 <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-
                                     <li class="divider"></li>
                                     <li class="dropdown-submenu">
                                         <a tabindex="-1" href="#">Forestry Interventions</a>
@@ -56,31 +54,29 @@
                                     </li>
                                 </ul>
                             </li>
-
                             <li class="dropdown">
                                 <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
                                     data-toggle="dropdown"> Reports</a>
-                                    <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
-
-                                        <li class="divider"></li>
-                                        <li class="dropdown-submenu">
-                                            <a tabindex="-1" href="#">Forestry Interventions</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a tabindex="-1" href="list.html">Natural Landscape</a></li>
-                                                <li><a href="#">Agricultural Landscape</a></li>
-                                                <li><a href="#">Urban Landscape</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="dropdown-submenu">
-                                            <a tabindex="-1" href="#">Other Interventions</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a tabindex="-1" href="#">Wetland Managemnet (Natural and
-                                                        Artificial)</a></li>
-                                                <li><a href="#">Riparian Wildlife Management</a></li>
-                                                <li><a href="#">Soil and Water Conservation</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
+                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                    <li class="divider"></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Forestry Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="list.html">Natural Landscape</a></li>
+                                            <li><a href="#">Agricultural Landscape</a></li>
+                                            <li><a href="#">Urban Landscape</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Other Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">Wetland Managemnet (Natural and
+                                                    Artificial)</a></li>
+                                            <li><a href="#">Riparian Wildlife Management</a></li>
+                                            <li><a href="#">Soil and Water Conservation</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </li>
                             <li class="dropdown">
                                 <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
@@ -113,10 +109,8 @@
                     </div>
                 </nav>
             </div>
-
             <div class="wrapper wrapper-content animated fadeInRight">
                 <div class="row">
-
                     <div class="col-lg-12">
                         <div class="ibox ">
                             <div class="ibox-title">
@@ -140,8 +134,13 @@
                         </div> -->
                             </div>
                             <div class="ibox-content">
-
                                 <form role="form" class="row">
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Name of Site</label>
+                                        <input type="text" class="form-control" tabindex="1">
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Area (In Hectare)</label>
+                                        <input type="number" class="form-control">
+                                    </div>
                                     <div class="col-md-4 col-sm-12 form-group"><label>State</label>
                                         <select data-placeholder="Choose a Country..." class="chosen-select"
                                             tabindex="2">
@@ -149,28 +148,200 @@
                                             <option value="ap">Andhra Pradesh</option>
                                             <option value="mh">Maharastra</option>
                                             <option value="ts">Telangana</option>
-
                                         </select>
                                     </div>
                                     <div class="col-md-4 col-sm-12 form-group"><label>District</label>
                                         <select data-placeholder="Choose a District..." class="chosen-select"
-                                            tabindex="2">
+                                            tabindex="3">
                                             <option value="">Select</option>
                                             <option value="Adilabad"> Adilabad</option>
                                             <option value="Hyderabad">Hyderabad</option>
                                             <option value="Jagitial">Jagitial</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-4 col-sm-12 form-group"><label>Text</label>
-                                        <input type="text" placeholder="Enter text" class="form-control">
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Forest Division</label>
+                                        <select data-placeholder="Choose a District..." class="chosen-select"
+                                            tabindex="4">
+                                            <option value="">Select</option>
+                                        </select>
                                     </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Forest Range</label>
+                                        <select data-placeholder="Choose a District..." class="chosen-select"
+                                            tabindex="5">
+                                            <option value="">Select</option>
 
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Forest Block</label>
+                                        <select data-placeholder="Choose a District..." class="chosen-select"
+                                            tabindex="6">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Forest Beat</label>
+                                        <select data-placeholder="Choose a District..." class="chosen-select"
+                                            tabindex="7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Development Block (Mandal Name)
+                                        </label>
+                                        <select data-placeholder="Choose a District..." class="chosen-select"
+                                            tabindex="8">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Tehsil</label>
+                                        <select data-placeholder="Choose a District..." class="chosen-select"
+                                            tabindex="9">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Panchayat</label>
+                                        <select data-placeholder="Choose a District..." class="chosen-select"
+                                            tabindex="10">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Village</label>
+                                        <select data-placeholder="Choose a District..." class="chosen-select"
+                                            tabindex="11">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 form-group">
+                                        <label>Density of Forest
+                                            Area</label><br>
+                                        <div class="i-checks">
+                                            <label> <input type="radio" value="option1" name="a">
+                                                dense (>70%)</label>
+                                            <label> <input type="radio" checked="" value="option2" name="a"> Moderately
+                                                dense (40-70%)</label>
+                                            <label> <input type="radio" value="option1" name="a">
+                                                Open
+                                                (10-40%) </label>
+                                            <label> <input type="radio" value="option1" name="a">
+                                                Scrub (
+                                                < 10%) </label> </div> </div> <div
+                                                    class="col-md-12 col-sm-12 form-group">
+                                                    <h4>Dominant Florae and
+                                                        Faunae of the area</h4>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12 form-group">
+                                            <label>Trees</label>
+                                            <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12 form-group">
+                                            <label>Shrubs</label>
+                                            <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12 form-group">
+                                            <label>Herbs & Grasses </label>
+                                            <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12 form-group">
+                                            <label>Fauna </label>
+                                            <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="i-checks">
+                                                <label>Current Land Use Pattern</label><br>
+                                                <label> <input type="radio" value="option1" name="b">Natural
+                                                    forest</label>
+                                                <label> <input type="radio" checked="" value="option2" name="b">Tree
+                                                    plantation</label>
+                                                <label> <input type="radio" value="option3" name="b">Grassland</label>
+                                                <label> <input type="radio" value="option4" name="b">Cultivated
+                                                    land</label>
+                                                <label> <input type="radio" value="option5" name="b">Barren/Waste
+                                                    land</label>
+                                                <label> <input type="radio" value="option6"
+                                                        name="b">Waterbody/Wetland</label>
+                                                <label> <input type="radio" value="option7" name="b">Other <input
+                                                        type="text" placeholder="Specify"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="i-checks">
+                                                <label> Land Ownership Status</label><br>
+                                                <label> <input type="radio" value="option1" name="c">Reserve
+                                                    forest</label>
+                                                <label> <input type="radio" checked="" value="option2" name="c">Revenue
+                                                    land</label>
+                                                <label> <input type="radio" value="optio3" name="c">Private land</label>
+                                                <label> <input type="radio" value="option4" name="c">Leased land</label>
+                                                <label> <input type="radio" value="option5" name="c">Community
+                                                    land</label>
+                                                <label> <input type="radio" value="option6" name="c">Any other
+                                                    land</label>
+                                                <label> <input type="radio" value="option7" name="c">Other <input
+                                                        type="text" placeholder="Specify"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="i-checks">
+                                                <label> Geology</label><br>
+                                                <label> <input type="radio" value="option1" name="d">Basalt</label>
+                                                <label> <input type="radio" checked="" value="option2"
+                                                        name="d">Granite</label>
+                                                <label> <input type="radio" value="option3" name="d">Gneiss</label>
+                                                <label> <input type="radio" value="option4" name="d">Sandstone</label>
+                                                <label> <input type="radio" value="option5" name="d">Shales</label>
+                                                <label> <input type="radio" value="option6" name="d">Limestone</label>
+                                                <label> <input type="radio" value="option7" name="d">Other <input
+                                                        type="text" placeholder="Specify"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="i-checks">
+                                                <label> Soil Type</label><br>
+                                                <label> <input type="radio" value="option1" name="e">Alluvial
+                                                    soil(Loamy)</label>
+                                                <label> <input type="radio" checked="" value="option2" name="e">Sandy
+                                                    soil</label>
+                                                <label> <input type="radio" value="option3" name="e">Clayey soil</label>
+                                                <label> <input type="radio" value="option4" name="e">Lateritic
+                                                    soil</label>
+                                                <label> <input type="radio" value="option5" name="e">Red soil</label>
+                                                <label> <input type="radio" value="option6" name="e">Brown soil</label>
+                                                <label> <input type="radio" value="option7" name="e">7.Black
+                                                    soil</label>
+                                                <label> <input type="radio" value="option8" name="e">>8.Saline/Alkaline
+                                                    soil</label>
+                                                <label> <input type="radio" value="option9" name="e">Other <input
+                                                        type="text" placeholder="Specify"></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12">
+                                            <div class="i-checks">
+                                                <label> Terrain</label><br>
+                                                <label> <input type="radio" value="option1" name="f">Hilly area</label>
+                                                <label> <input type="radio" checked="" value="option2" name="f">Plain
+                                                    area</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5 col-sm-12">
+                                            <div class="i-checks">
+                                                <label> Slope</label><br>
+                                                <label> <input type="radio" value="option1" name="g">Zero-10 degree</label>
+                                                <label> <input type="radio" checked="" value="option2" name="g">11-20degree</label>
+                                                <label> <input type="radio" value="option1" name="g">21-30degree</label>
+                                                <label> <input type="radio" checked="" value="option2" name="g">Above 30 degree</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12">
+                                                <div class="i-checks">
+                                                    <label> Aspect (In case of Hilly area)</label><br>
+                                                    <label> <input type="radio" value="option1" name="i">North facing</label>
+                                                    <label> <input type="radio" checked="" value="option2" name="i">South facing</label>
+                                                </div>
+                                            </div>
+                                    </div>
                                 </form>
                             </div>
                         </div>
                     </div>
                 </div>
-                >
             </div>
             <!-- 
 			planned for footer if any 
@@ -184,20 +355,28 @@
         </div> -->
         </div>
     </div>
-
     <!-- Mainly scripts -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
     <!-- Chosen -->
     <script src="js/plugins/chosen/chosen.jquery.js"></script>
+
+    <!-- iCheck -->
+    <script src="js/plugins/iCheck/icheck.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.i-checks').iCheck({
+                checkboxClass: 'icheckbox_square-green',
+                radioClass: 'iradio_square-green',
+            });
+        });
+    </script>
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
-
     <script>
         $(document).ready($('.chosen-select').chosen({
             width: "100%"
