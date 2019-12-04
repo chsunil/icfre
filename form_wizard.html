@@ -92,18 +92,20 @@
                                 <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
                                     data-toggle="dropdown"> Admin</a>
                                 <ul role="menu" class="dropdown-menu">
-                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="users.html">Users</a></li>
                                     <li><a href="">Menu item</a></li>
                                     <li><a href="">Menu item</a></li>
                                     <li><a href="">Menu item</a></li>
                                 </ul>
                             </li>
                         </ul>
-                        <ul class="nav navbar-top-links navbar-right">
-                            <li>
-                                <a href="login.html">
-                                    <i class="fa fa-sign-out"></i> Log out
-                                </a>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Name</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="profile.html" class="dropdown-item">Profile</a>
+                                    <a href="login.html"class="dropdown-item"> Logout</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -211,7 +213,7 @@
                                     </div>
                                     <div class="col-md-12 col-sm-12 form-group">
                                         <label>Density of Forest
-                                            Area</label><br>
+                                            Area</label>
                                         <div class="i-checks">
                                             <label> <input type="radio" value="option1" name="a">
                                                 dense (>70%)</label>
@@ -245,7 +247,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="i-checks">
-                                                <label>Current Land Use Pattern</label><br>
+                                                <label>Current Land Use Pattern</label>
                                                 <label> <input type="radio" value="option1" name="b">Natural
                                                     forest</label>
                                                 <label> <input type="radio" checked="" value="option2" name="b">Tree
@@ -263,7 +265,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="i-checks">
-                                                <label> Land Ownership Status</label><br>
+                                                <label> Land Ownership Status</label>
                                                 <label> <input type="radio" value="option1" name="c">Reserve
                                                     forest</label>
                                                 <label> <input type="radio" checked="" value="option2" name="c">Revenue
@@ -280,7 +282,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="i-checks">
-                                                <label> Geology</label><br>
+                                                <label> Geology</label>
                                                 <label> <input type="radio" value="option1" name="d">Basalt</label>
                                                 <label> <input type="radio" checked="" value="option2"
                                                         name="d">Granite</label>
@@ -294,7 +296,7 @@
                                         </div>
                                         <div class="col-md-12">
                                             <div class="i-checks">
-                                                <label> Soil Type</label><br>
+                                                <label> Soil Type</label>
                                                 <label> <input type="radio" value="option1" name="e">Alluvial
                                                     soil(Loamy)</label>
                                                 <label> <input type="radio" checked="" value="option2" name="e">Sandy
@@ -314,7 +316,7 @@
                                         </div>
                                         <div class="col-md-3 col-sm-12">
                                             <div class="i-checks">
-                                                <label> Terrain</label><br>
+                                                <label> Terrain</label>
                                                 <label> <input type="radio" value="option1" name="f">Hilly area</label>
                                                 <label> <input type="radio" checked="" value="option2" name="f">Plain
                                                     area</label>
@@ -322,20 +324,29 @@
                                         </div>
                                         <div class="col-md-5 col-sm-12">
                                             <div class="i-checks">
-                                                <label> Slope</label><br>
-                                                <label> <input type="radio" value="option1" name="g">Zero-10 degree</label>
-                                                <label> <input type="radio" checked="" value="option2" name="g">11-20degree</label>
+                                                <label> Slope</label>
+                                                <label> <input type="radio" value="option1" name="g">Zero-10
+                                                    degree</label>
+                                                <label> <input type="radio" checked="" value="option2"
+                                                        name="g">11-20degree</label>
                                                 <label> <input type="radio" value="option1" name="g">21-30degree</label>
-                                                <label> <input type="radio" checked="" value="option2" name="g">Above 30 degree</label>
+                                                <label> <input type="radio" checked="" value="option2" name="g">Above 30
+                                                    degree</label>
                                             </div>
                                         </div>
                                         <div class="col-md-4 col-sm-12">
-                                                <div class="i-checks">
-                                                    <label> Aspect (In case of Hilly area)</label><br>
-                                                    <label> <input type="radio" value="option1" name="i">North facing</label>
-                                                    <label> <input type="radio" checked="" value="option2" name="i">South facing</label>
-                                                </div>
+                                            <div class="i-checks">
+                                                <label> Aspect (In case of Hilly area)</label>
+                                                <label> <input type="radio" value="option1" name="i">North
+                                                    facing</label>
+                                                <label> <input type="radio" checked="" value="option2" name="i">South
+                                                    facing</label>
                                             </div>
+                                        </div>
+                                        <div class="col-sm-4 col-sm-offset-2 mt-4">
+                                            <button class="btn btn-white btn-sm" type="submit">Cancel</button>
+                                            <button class="btn btn-primary btn-sm" type="submit">Save changes</button>
+                                        </div>
                                     </div>
                                 </form>
                             </div>

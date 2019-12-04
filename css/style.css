@@ -1464,7 +1464,7 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
   margin-left: 0 !important;
 }
 .top-navigation .wrapper.wrapper-content {
-  padding: 40px;
+  padding: 10px;
 }
 .top-navigation.body-small .wrapper.wrapper-content,
 .body-small .top-navigation .wrapper.wrapper-content {
@@ -2788,6 +2788,17 @@ label{
 }
 .i-checks:first-child{
   font-weight: normal;
+}
+label:nth-child(2) {
+  font-weight: normal;
+}
+label:first-child {
+  display: block;
+
+}
+.iradio_square-green
+{
+  margin-right: 5px;
 }
 .form-control,
 .single-line {
@@ -6354,7 +6365,7 @@ dd.project-people {
 .clients-list {
   margin-top: 20px;
 }
-.clients-list .tab-pane {
+.clients-list .tab-pane  {
   position: relative;
   height: 600px;
 }
@@ -6363,13 +6374,13 @@ dd.project-people {
   height: 620px;
 }
 .clients-list table tr td {
-  height: 46px;
+/*   height: 46px; */
   vertical-align: middle;
   border: none;
 }
 .client-link {
-  font-weight: 600;
-  color: inherit;
+  /* font-weight: 600; */
+  color: #007bff;
 }
 .client-link:hover {
   color: inherit;
@@ -9660,4 +9671,12 @@ body.md-skin {
   -webkit-border-radius: 6px 0 6px 6px;
   -moz-border-radius: 6px 0 6px 6px;
   border-radius: 6px 0 6px 6px;
+}
+.fa-15x
+{
+	font-size:1.5em;
+}
+.dropdown-menu-right
+{
+  right: 10px;
 }
