@@ -1,21 +1,18 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body class="top-navigation md-skin">
     <div id="wrapper">
-
-
-
         <div id="page-wrapper" class="gray-bg">
             <div class="row border-bottom white-bg">
                 <nav class="navbar navbar-expand-lg navbar-static-top" role="navigation">
@@ -105,14 +102,13 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Name</a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a href="profile.html" class="dropdown-item">Profile</a>
-                                    <a href="login.html"class="dropdown-item"> Logout</a>
+                                    <a href="login.html" class="dropdown-item"> Logout</a>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
-
             <div class="wrapper wrapper-content  animated fadeInRight">
                 <div class="row">
                     <div class="col-sm-8">
@@ -138,10 +134,10 @@
                                         <li><a class="nav-link p-2" data-toggle="tab" href="#tab-2"><i
                                                     class="fa fa-address-book"></i> Roles <span
                                                     class="label label-primary">3</span></a></li>
-                                        <li><a class="client-link p-2" href="#contact-add"><i class="fa fa-user-plus"></i>
+                                        <li><a class="client-link p-2" href="#contact-add"><i
+                                                    class="fa fa-user-plus"></i>
                                                 Create User </a></li>
                                         <li><a class="client-link p-2" href="#company-add">
-
                                                 <i class="fa fa-address-book-o"></i>
                                                 Create Role</a></li>
                                     </ul>
@@ -163,7 +159,145 @@
                                                         </thead>
                                                         <tbody>
                                                             <tr>
-                                                                <td><a href="#contact-1" class="client-link">anthonyjackson</a></td>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">anthonyjackson</a></td>
+                                                                <td> admin</td>
+                                                                <td> gravida@rbisit.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-primary">Active</span></td>
+                                                                <td class="text-center">
+                                                                    <a href="#" title="Edit" data-toggle="tooltip"
+                                                                        data-original-title="Edit"><i
+                                                                            class="fa fa-15x fa-edit"></i></a>
+                                                                    <a href="#" title="Delete" data-toggle="tooltip"
+                                                                        class="pl-1 deleteuser"
+                                                                        data-original-title="Delete"><i
+                                                                            class="fa fa-15x deleteuser fa-trash text-danger"></i></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">rooneylindsay</a></td>
+                                                                <td>User</td>
+                                                                <td> rooney@proin.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-primary">Active</span></td>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">lionelmcmillan</a></td>
+                                                                <td>User</td>
+                                                                <td>lionelmcmillan@xyz.com</td>
+                                                                <td class="client-status"></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">edanrandall</a></td>
+                                                                <td>User</td>
+                                                                <td> edanrandall@abc.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-warning">inactive</span></td>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">jaspercarson</a></td>
+                                                                <td>User</td>
+                                                                <td> jaspercarson@cdf.com</td>
+                                                                <td class="client-status"></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">reubenpacheco</a></td>
+                                                                <td>Admin</td>
+                                                                <td> pacheco@manga.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-primary">Active</span></td>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">simoncarson</a></td>
+                                                                <td>User</td>
+                                                                <td> simon@erta.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-primary">Active</span></td>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">anthonyjackson</a></td>
+                                                                <td> admin</td>
+                                                                <td> gravida@rbisit.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-primary">Active</span></td>
+                                                                <td class="text-center">
+                                                                    <a href="#" title="Edit" data-toggle="tooltip"
+                                                                        data-original-title="Edit"><i
+                                                                            class="fa fa-15x fa-edit"></i></a>
+                                                                    <a href="#" title="Delete" data-toggle="tooltip"
+                                                                        class="pl-1" data-original-title="Delete"><i
+                                                                            class="fa fa-15x deleteuser fa-trash text-danger"></i></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">rooneylindsay</a></td>
+                                                                <td>User</td>
+                                                                <td> rooney@proin.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-primary">Active</span></td>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">lionelmcmillan</a></td>
+                                                                <td>User</td>
+                                                                <td>lionelmcmillan@xyz.com</td>
+                                                                <td class="client-status"></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">edanrandall</a></td>
+                                                                <td>User</td>
+                                                                <td> edanrandall@abc.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-warning">inactive</span></td>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">jaspercarson</a></td>
+                                                                <td>User</td>
+                                                                <td> jaspercarson@cdf.com</td>
+                                                                <td class="client-status"></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">reubenpacheco</a></td>
+                                                                <td>Admin</td>
+                                                                <td> pacheco@manga.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-primary">Active</span></td>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">simoncarson</a></td>
+                                                                <td>User</td>
+                                                                <td> simon@erta.com</td>
+                                                                <td class="client-status"><span
+                                                                        class="label label-primary">Active</span></td>
+                                                                <td>&nbsp;</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">anthonyjackson</a></td>
                                                                 <td> admin</td>
                                                                 <td> gravida@rbisit.com</td>
                                                                 <td class="client-status"><span
@@ -178,7 +312,8 @@
                                                                 </td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="#contact-2" class="client-link">rooneylindsay</a></td>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">rooneylindsay</a></td>
                                                                 <td>User</td>
                                                                 <td> rooney@proin.com</td>
                                                                 <td class="client-status"><span
@@ -186,165 +321,48 @@
                                                                 <td>&nbsp;</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="#contact-1" class="client-link">lionelmcmillan</a></td>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">lionelmcmillan</a></td>
                                                                 <td>User</td>
                                                                 <td>lionelmcmillan@xyz.com</td>
                                                                 <td class="client-status"></td>
                                                                 <td></td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="#contact-1" class="client-link">edanrandall</a></td>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">edanrandall</a></td>
                                                                 <td>User</td>
                                                                 <td> edanrandall@abc.com</td>
                                                                 <td class="client-status"><span
-                                                                        class="label label-warning">Waiting</span></td>
+                                                                        class="label label-warning">inactive</span></td>
                                                                 <td>&nbsp;</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="#contact-2" class="client-link">jaspercarson</a></td>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">jaspercarson</a></td>
                                                                 <td>User</td>
                                                                 <td> jaspercarson@cdf.com</td>
                                                                 <td class="client-status"></td>
                                                                 <td></td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="#contact-2" class="client-link">reubenpacheco</a></td>
+                                                                <td><a href="#contact-2"
+                                                                        class="client-link">reubenpacheco</a></td>
                                                                 <td>Admin</td>
                                                                 <td> pacheco@manga.com</td>
                                                                 <td class="client-status"><span
-                                                                        class="label label-info">Phoned</span></td>
+                                                                        class="label label-primary">Active</span></td>
                                                                 <td>&nbsp;</td>
                                                             </tr>
                                                             <tr>
-                                                                <td><a href="#contact-1" class="client-link">simoncarson</a></td>
+                                                                <td><a href="#contact-1"
+                                                                        class="client-link">simoncarson</a></td>
                                                                 <td>User</td>
                                                                 <td> simon@erta.com</td>
                                                                 <td class="client-status"><span
                                                                         class="label label-primary">Active</span></td>
                                                                 <td>&nbsp;</td>
                                                             </tr>
-                                                            <tr>
-                                                                    <td><a href="#contact-1" class="client-link">anthonyjackson</a></td>
-                                                                    <td> admin</td>
-                                                                    <td> gravida@rbisit.com</td>
-                                                                    <td class="client-status"><span
-                                                                            class="label label-primary">Active</span></td>
-                                                                    <td class="text-center">
-                                                                        <a href="#" title="Edit" data-toggle="tooltip"
-                                                                            data-original-title="Edit"><i
-                                                                                class="fa fa-15x fa-edit"></i></a>
-                                                                        <a href="#" title="Delete" data-toggle="tooltip"
-                                                                            class="pl-1" data-original-title="Delete"><i
-                                                                                class="fa fa-15x fa-times-circle text-danger"></i></a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><a href="#contact-2" class="client-link">rooneylindsay</a></td>
-                                                                    <td>User</td>
-                                                                    <td> rooney@proin.com</td>
-                                                                    <td class="client-status"><span
-                                                                            class="label label-primary">Active</span></td>
-                                                                    <td>&nbsp;</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><a href="#contact-2" class="client-link">lionelmcmillan</a></td>
-                                                                    <td>User</td>
-                                                                    <td>lionelmcmillan@xyz.com</td>
-                                                                    <td class="client-status"></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><a href="#contact-1" class="client-link">edanrandall</a></td>
-                                                                    <td>User</td>
-                                                                    <td> edanrandall@abc.com</td>
-                                                                    <td class="client-status"><span
-                                                                            class="label label-warning">Waiting</span></td>
-                                                                    <td>&nbsp;</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><a href="#contact-2" class="client-link">jaspercarson</a></td>
-                                                                    <td>User</td>
-                                                                    <td> jaspercarson@cdf.com</td>
-                                                                    <td class="client-status"></td>
-                                                                    <td></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><a href="#contact-2" class="client-link">reubenpacheco</a></td>
-                                                                    <td>Admin</td>
-                                                                    <td> pacheco@manga.com</td>
-                                                                    <td class="client-status"><span
-                                                                            class="label label-info">Phoned</span></td>
-                                                                    <td>&nbsp;</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td><a href="#contact-1" class="client-link">simoncarson</a></td>
-                                                                    <td>User</td>
-                                                                    <td> simon@erta.com</td>
-                                                                    <td class="client-status"><span
-                                                                            class="label label-primary">Active</span></td>
-                                                                    <td>&nbsp;</td>
-                                                                </tr>
-                                                                <tr>
-                                                                        <td><a href="#contact-1" class="client-link">anthonyjackson</a></td>
-                                                                        <td> admin</td>
-                                                                        <td> gravida@rbisit.com</td>
-                                                                        <td class="client-status"><span
-                                                                                class="label label-primary">Active</span></td>
-                                                                        <td class="text-center">
-                                                                            <a href="#" title="Edit" data-toggle="tooltip"
-                                                                                data-original-title="Edit"><i
-                                                                                    class="fa fa-15x fa-edit"></i></a>
-                                                                            <a href="#" title="Delete" data-toggle="tooltip"
-                                                                                class="pl-1" data-original-title="Delete"><i
-                                                                                    class="fa fa-15x fa-times-circle text-danger"></i></a>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><a href="#contact-2" class="client-link">rooneylindsay</a></td>
-                                                                        <td>User</td>
-                                                                        <td> rooney@proin.com</td>
-                                                                        <td class="client-status"><span
-                                                                                class="label label-primary">Active</span></td>
-                                                                        <td>&nbsp;</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><a href="#contact-2" class="client-link">lionelmcmillan</a></td>
-                                                                        <td>User</td>
-                                                                        <td>lionelmcmillan@xyz.com</td>
-                                                                        <td class="client-status"></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><a href="#contact-1" class="client-link">edanrandall</a></td>
-                                                                        <td>User</td>
-                                                                        <td> edanrandall@abc.com</td>
-                                                                        <td class="client-status"><span
-                                                                                class="label label-warning">Waiting</span></td>
-                                                                        <td>&nbsp;</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><a href="#contact-2" class="client-link">jaspercarson</a></td>
-                                                                        <td>User</td>
-                                                                        <td> jaspercarson@cdf.com</td>
-                                                                        <td class="client-status"></td>
-                                                                        <td></td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><a href="#contact-2" class="client-link">reubenpacheco</a></td>
-                                                                        <td>Admin</td>
-                                                                        <td> pacheco@manga.com</td>
-                                                                        <td class="client-status"><span
-                                                                                class="label label-info">Phoned</span></td>
-                                                                        <td>&nbsp;</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td><a href="#contact-1" class="client-link">simoncarson</a></td>
-                                                                        <td>User</td>
-                                                                        <td> simon@erta.com</td>
-                                                                        <td class="client-status"><span
-                                                                                class="label label-primary">Active</span></td>
-                                                                        <td>&nbsp;</td>
-                                                                    </tr>
                                                             </thead>
                                                     </table>
                                                 </div>
@@ -384,7 +402,7 @@
                                                                 <td>Eisden</td>
                                                                 <td><i class="fa fa-flag"></i> Korea, North</td>
                                                                 <td class="client-status"><span
-                                                                        class="label label-warning">Waiting</span></td>
+                                                                        class="label label-warning">inactive</span></td>
                                                             </tr>
                                                             <tr>
                                                                 <td><a href="#company-2" class="client-link">Penatibus
@@ -437,7 +455,7 @@
                                                                 <td>Eisden</td>
                                                                 <td><i class="fa fa-flag"></i> Korea, North</td>
                                                                 <td class="client-status"><span
-                                                                        class="label label-warning">Waiting</span></td>
+                                                                        class="label label-warning">inactive</span></td>
                                                             </tr>
                                                             <tr>
                                                                 <td><a href="#company-2" class="client-link">Penatibus
@@ -490,7 +508,7 @@
                                                                 <td>Eisden</td>
                                                                 <td><i class="fa fa-flag"></i> Korea, North</td>
                                                                 <td class="client-status"><span
-                                                                        class="label label-warning">Waiting</span></td>
+                                                                        class="label label-warning">inactive</span></td>
                                                             </tr>
                                                             <tr>
                                                                 <td><a href="#company-2" class="client-link">Penatibus
@@ -515,34 +533,28 @@
                                                                 <td class="client-status"><span
                                                                         class="label label-primary">Active</span></td>
                                                             </tr>
-                                                            
                                                         </tbody>
                                                     </table>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
                         <div class="ibox selected">
-
                             <div class="ibox-content">
                                 <div class="tab-content">
                                     <div id="contact-1" class="tab-pane active">
-                                      
                                         <div class="client-detail">
                                             <div class="full-height-scroll">
-
                                                 <strong>User Details</strong>
-
                                                 <ul class="list-group clear-list">
-                                                    <li class="list-group-item fist-item">
+                                                    <li class="list-group-item ">
                                                         <span class="float-right"> anthonyjackson </span>
-                                                       Username
+                                                        Username
                                                     </li>
                                                     <li class="list-group-item">
                                                         <span class="float-right"> admin </span>
@@ -557,127 +569,148 @@
                                                         Status
                                                     </li>
                                                     <li class="list-group-item">
-                                                        <span class="float-right"> <i class="fa fa-clock-o"></i>  2:10 pm - 12.Dec.2014 </span>
-                                                       Created
+                                                        <span class="float-right"> <i class="fa fa-clock-o"></i> 2:10 pm
+                                                            - 12.Dec.2014 </span>
+                                                        Created
                                                     </li>
                                                     <li class="list-group-item">
-                                                            <span class="float-right"> <i class="fa fa-clock-o"></i>  2:10 pm - 12.Nov.2019 </span>
-                                                           Last Login
-                                                        </li>
-                                                        <div class="row m-t-lg">
-                                                            <div class="col-sm-6">
-                                                                    <button type="button" class="btn btn-warning btn-sm btn-block"><i class="fa fa-edit"></i> Edit
-                                                                    </button>
-                                                            </div>
-                                                            <div class="col-sm-6">
-                                                                    <button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-trash"></i> Delete
-                                                                    </button>
-                                                            </div>
+                                                        <span class="float-right"> <i class="fa fa-clock-o"></i> 2:10 pm
+                                                            - 12.Nov.2019 </span>
+                                                        Last Login
+                                                    </li>
+                                                    <div class="row m-t-lg">
+                                                        <div class="col-sm-6">
+                                                            <button type="button"
+                                                                class="btn btn-warning btn-sm btn-block"><i
+                                                                    class="fa fa-edit"></i> Edit
+                                                            </button>
                                                         </div>
+                                                        <div class="col-sm-6">
+                                                            <button type="button"
+                                                                class="btn btn-danger btn-sm btn-block deleteuser"><i
+                                                                    class="fa fa-trash"></i> Delete
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </ul>
-                                               
                                             </div>
                                         </div>
                                     </div>
                                     <div id="contact-2" class="tab-pane">
-                                      
-                                            <div class="client-detail">
-                                                    <div class="full-height-scroll">
-        
-                                                        <strong>User Details</strong>
-        
-                                                        <ul class="list-group clear-list">
-                                                            <li class="list-group-item fist-item">
-                                                                <span class="float-right"> rooneylindsay </span>
-                                                               Username
-                                                            </li>
-                                                            <li class="list-group-item">
-                                                                <span class="float-right"> User </span>
-                                                                Role
-                                                            </li>
-                                                            <li class="list-group-item">
-                                                                <span class="float-right"> rooney@proin.com </span>
-                                                                Email
-                                                            </li>
-                                                            <li class="list-group-item">
-                                                                <span class="float-right"> Active </span>
-                                                                Status
-                                                            </li>
-                                                            <li class="list-group-item">
-                                                                <span class="float-right"> <i class="fa fa-clock-o"></i>  2:10 pm - 12.Dec.2014 </span>
-                                                               Created
-                                                            </li>
-                                                            <li class="list-group-item">
-                                                                    <span class="float-right"> <i class="fa fa-clock-o"></i>  2:10 pm - 12.Nov.2019 </span>
-                                                                   Last Login
-                                                                </li>
-                                                                <div class="row m-t-lg">
-                                                                    <div class="col-sm-6">
-                                                                            <button type="button" class="btn btn-warning btn-sm btn-block"><i class="fa fa-edit"></i> Edit
-                                                                            </button>
-                                                                    </div>
-                                                                    <div class="col-sm-6">
-                                                                            <button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-trash"></i> Delete
-                                                                            </button>
-                                                                    </div>
-                                                                </div>
-                                                        </ul>
-                                                       
-                                                    </div>
-                                                </div>
-                                    </div>
-                                   
-                                    <div id="contact-add" class="tab-pane">
-                                       
                                         <div class="client-detail">
                                             <div class="full-height-scroll">
-
-                                                <strong>Add User</strong>
-
+                                                <strong>User Details</strong>
                                                 <ul class="list-group clear-list">
-                                                        <li class="list-group-item fist-item">
-                                                            <span class="float-right"> <input type="text" placeholder="Enter username" class="form-control"> </span>
-                                                           Username
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <span class="float-right"> User </span>
-                                                            Role
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <span class="float-right"> rooney@proin.com </span>
-                                                            Email
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <span class="float-right"> Active </span>
-                                                            Status
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                            <span class="float-right"> <i class="fa fa-clock-o"></i>  2:10 pm - 12.Dec.2014 </span>
-                                                           Created
-                                                        </li>
-                                                        <li class="list-group-item">
-                                                                <span class="float-right"> <i class="fa fa-clock-o"></i>  2:10 pm - 12.Nov.2019 </span>
-                                                               Last Login
-                                                            </li>
-                                                            <div class="row m-t-lg">
-                                                                <div class="col-sm-6">
-                                                                        <button type="button" class="btn btn-warning btn-sm btn-block"><i class="fa fa-edit"></i> Edit
-                                                                        </button>
+                                                    <li class="list-group-item ">
+                                                        <span class="float-right"> rooneylindsay </span>
+                                                        Username
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right"> User </span>
+                                                        Role
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right"> rooney@proin.com </span>
+                                                        Email
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right"> Active </span>
+                                                        Status
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right"> <i class="fa fa-clock-o"></i> 2:10 pm
+                                                            - 12.Dec.2014 </span>
+                                                        Created
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right"> <i class="fa fa-clock-o"></i> 2:10 pm
+                                                            - 12.Nov.2019 </span>
+                                                        Last Login
+                                                    </li>
+                                                    <div class="row m-t-lg">
+                                                        <div class="col-sm-6">
+                                                            <button type="button"
+                                                                class="btn btn-warning btn-sm btn-block"><i
+                                                                    class="fa fa-edit"></i> Edit
+                                                            </button>
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <button type="button"
+                                                                class="btn btn-danger btn-sm btn-block"><i
+                                                                    class="fa fa-trash"></i> Delete
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="contact-add" class="tab-pane">
+                                        <div class="client-detail">
+                                            <div class="full-height-scroll">
+                                                <strong>Add User</strong>
+                                                <ul class="list-group clear-list">
+                                                    <li class="list-group-item ">
+                                                        <span class="float-right"> <input type="text"
+                                                                placeholder="Username" class="form-control"> </span>
+                                                        <label> Username</label>
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right">
+                                                            <select data-placeholder="Choose Role" class="form-control"
+                                                                tabindex="2">
+                                                                <option value="">Select</option>
+                                                                <option value="admin">admin</option>
+                                                                <option value="user">User</option>
+                                                            </select> </span>
+                                                        Role
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right"> <input type="email"
+                                                                placeholder="Email" class="form-control"> </span>
+                                                        Email
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right"> <input type="password"
+                                                                placeholder="Password" class="form-control"> </span>
+                                                        Password
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right"> <input type="password"
+                                                                placeholder="Password" class="form-control"> </span>
+                                                        Confirm Password
+                                                    </li>
+                                                    <li class="list-group-item">
+                                                        <span class="float-right">
+                                                            <select data-placeholder="Choose Status"
+                                                                class="form-control" tabindex="2">
+                                                                <option value="">Select</option>
+                                                                <option value="active">Active</option>
+                                                                <option value="inactive">Inactive</option>
+                                                            </select> </span>
+                                                        Status
+                                                    </li>
+                                                    <div class="row m-t-lg">
+                                                            <div class="col-sm-6">
+                                                                    <button type="button"
+                                                                        class="btn btn-default  btn-sm btn-block"><i
+                                                                            class="fa fa-close"></i> Clear
+                                                                    </button>
                                                                 </div>
-                                                                <div class="col-sm-6">
-                                                                        <button type="button" class="btn btn-danger btn-sm btn-block"><i class="fa fa-trash"></i> Delete
-                                                                        </button>
-                                                                </div>
-                                                            </div>
-                                                    </ul>
-
+                                                        <div class="col-sm-6">
+                                                            <button type="button"
+                                                                class="btn btn-primary btn-sm btn-block"><i
+                                                                    class="fa fa-check"></i> Save
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                     <div id="company-1" class="tab-pane">
                                         <div class="m-b-lg">
                                             <h2>admin</h2>
-
                                             <p>
                                                 Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by
                                                 Cicero,written in 45 BC. This book is a treatise on.
@@ -691,18 +724,16 @@
                                         </div>
                                         <div class="client-detail">
                                             <div class="full-height-scroll">
-
                                                 <strong>Last activity</strong>
-
                                                 <ul class="list-group clear-list">
-                                                    <li class="list-group-item fist-item">
+                                                    <li class="list-group-item ">
                                                         <span class="float-right"> <span
                                                                 class="label label-primary">NEW</span> </span>
                                                         The point of using
                                                     </li>
                                                     <li class="list-group-item">
                                                         <span class="float-right"> <span
-                                                                class="label label-warning">WAITING</span></span>
+                                                                class="label label-warning">inactive</span></span>
                                                         Lorem Ipsum is that it has
                                                     </li>
                                                     <li class="list-group-item">
@@ -718,14 +749,12 @@
                                                     non-characteristic words etc.
                                                 </p>
                                                 <hr />
-
                                             </div>
                                         </div>
                                     </div>
                                     <div id="company-2" class="tab-pane">
                                         <div class="m-b-lg">
                                             <h2>Penatibus Consulting</h2>
-
                                             <p>
                                                 There are many variations of passages of Lorem Ipsum available, but the
                                                 majority have suffered alteration in some.
@@ -739,13 +768,11 @@
                                         </div>
                                         <div class="client-detail">
                                             <div class="full-height-scroll">
-
                                                 <strong>Last activity</strong>
-
                                                 <ul class="list-group clear-list">
-                                                    <li class="list-group-item fist-item">
+                                                    <li class="list-group-item ">
                                                         <span class="float-right"> <span
-                                                                class="label label-warning">WAITING</span> </span>
+                                                                class="label label-warning">inactive</span> </span>
                                                         Aldus PageMaker
                                                     </li>
                                                     <li class="list-group-item">
@@ -766,14 +793,12 @@
                                                     non-characteristic words etc.
                                                 </p>
                                                 <hr />
-
                                             </div>
                                         </div>
                                     </div>
                                     <div id="company-add" class="tab-pane">
                                         <div class="m-b-lg">
                                             <h2>Ultrices Incorporated</h2>
-
                                             <p>
                                                 Many desktop publishing packages and web page editors now use Lorem
                                                 Ipsum as their default model text.
@@ -787,11 +812,9 @@
                                         </div>
                                         <div class="client-detail">
                                             <div class="full-height-scroll">
-
                                                 <strong>Last activity</strong>
-
                                                 <ul class="list-group clear-list">
-                                                    <li class="list-group-item fist-item">
+                                                    <li class="list-group-item ">
                                                         <span class="float-right"> <span
                                                                 class="label label-danger">BLOCKED</span> </span>
                                                         Hidden in the middle of text
@@ -803,7 +826,7 @@
                                                     </li>
                                                     <li class="list-group-item">
                                                         <span class="float-right"> <span
-                                                                class="label label-warning">WAITING</span> </span>
+                                                                class="label label-warning">inactive</span> </span>
                                                         Bonorum et Malorum
                                                     </li>
                                                 </ul>
@@ -814,7 +837,6 @@
                                                     humour.
                                                 </p>
                                                 <hr />
-
                                             </div>
                                         </div>
                                     </div>
@@ -834,35 +856,47 @@
                 <strong>Copyright</strong> Example Company &copy; 2014-2018
             </div>
         </div> -->
-
         </div>
     </div>
-
-
-
     <!-- Mainly scripts -->
     <script src="js/jquery-3.1.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
     <!-- Custom and plugin javascript -->
     <script src="js/inspinia.js"></script>
     <script src="js/plugins/pace/pace.min.js"></script>
-
     <script>
         $(document).ready(function () {
-
             $(document.body).on("click", ".client-link", function (e) {
                 e.preventDefault()
                 $(".selected .tab-pane").removeClass('active');
                 $($(this).attr('href')).addClass("active");
             });
-
+            $('.deleteuser').click(function () {
+                swal({
+                        title: "Are you sure?",
+                        text: "Your will not be able to recover this imaginary file!",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "Yes, delete it!",
+                        cancelButtonText: "No, keep user",
+                        closeOnConfirm: false,
+                        closeOnCancel: false
+                    },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            swal("Deleted!", "User has been deleted.", "success");
+                        } else {
+                            swal("Cancelled", "user is not deleted :)", "error");
+                        }
+                    });
+            });
         });
     </script>
-
 </body>
-
 </html>
