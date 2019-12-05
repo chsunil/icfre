@@ -9693,3 +9693,7 @@ body.md-skin {
 {
   right: 10px;
 }
+.dataTables_paginate
+{
+  float: right;
+}
