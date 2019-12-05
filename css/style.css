@@ -2531,6 +2531,7 @@ table.dataTable thead .sorting_desc_disabled {
 }
 .dataTables_filter label {
   margin-right: 5px;
+  display: inline-block !important;
 }
 .html5buttons {
   float: right;
