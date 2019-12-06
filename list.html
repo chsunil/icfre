@@ -20,17 +20,17 @@
 
         <div id="page-wrapper" class="gray-bg">
             <div class="row border-bottom white-bg">
-                <nav class="navbar navbar-e90and-lg navbar-static-top" role="navigation">
+                <nav class="navbar navbar-expand-lg navbar-static-top" role="navigation">
                     <a href="#" class="navbar-brand">ICFRE</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
-                        aria-e90anded="false" aria-label="Toggle navigation">
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <i class="fa fa-reorder"></i>
                     </button>
                     <div class="navbar-collapse collapse" id="navbar">
                         <ul class="nav navbar-nav mr-auto">
                             <!-- <li class="active">
-                        <a aria-e90anded="false" role="button" href="layouts.html"> Back to main Layout page</a>
-                    </li> -->
+                                <a aria-expanded="false" role="button" href="layouts.html"> Back to main Layout page</a>
+                            </li> -->
                             <li class="dropdown">
                                 <a id="dLabel" role="button" data-toggle="dropdown" class="dropdown-toggle"
                                     data-target="#">
@@ -58,7 +58,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a aria-e90anded="false" role="button" href="#" class="dropdown-toggle"
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
                                     data-toggle="dropdown"> Reports</a>
                                 <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
                                     <li class="divider"></li>
@@ -82,7 +82,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a aria-e90anded="false" role="button" href="#" class="dropdown-toggle"
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
                                     data-toggle="dropdown"> Audit</a>
                                 <ul role="menu" class="dropdown-menu">
                                     <li><a href="">Menu item</a></li>
@@ -92,7 +92,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a aria-e90anded="false" role="button" href="#" class="dropdown-toggle"
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
                                     data-toggle="dropdown"> Admin</a>
                                 <ul role="menu" class="dropdown-menu">
                                     <li><a href="users.html">Users</a></li>
@@ -140,11 +140,42 @@
                             </div> -->
                             </div>
                             <div class="ibox-content">
-
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-12 form-group"><label>Select State</label>
+                                        <select id="state-filter" data-placeholder="Choose a Country..."
+                                            class="form-control" tabindex="2">
+                                            <option value="">All</option>
+                                            <option value="ap">Andhra Pradesh</option>
+                                            <option value="mh">Maharastra</option>
+                                            <option value="ts">Telangana</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 form-group"><label>Select District</label>
+                                        <select id="district-filter" data-placeholder="Choose a District..."
+                                            class="form-control" tabindex="3">
+                                            <option value="">All</option>
+                                            <option value="Adilabad"> Adilabad</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Jagitial">Jagitial</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 form-group"><label>Select Mandal</label>
+                                        <select data-placeholder="Choose a District..."
+                                            class="form-control" tabindex="3">
+                                            <option value="">All</option>
+                                            <option value="Adilabad"> Adilabad</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Jagitial">Jagitial</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="table-responsive">
                                     <table class="table table-striped table-bordered table-hover dataTables-example">
                                         <thead>
                                             <tr>
+                                              <th rowspan="3">State</th>
+                                              <th rowspan="3">District</th>
+                                              <th rowspan="3">Mandal</th>
                                                 <th rowspan="3">Treatment Site Name</th>
                                                 <th colspan="2" class="text-center">Year</th>
                                                 <th colspan="2" class="text-center">Year</th>
@@ -170,7 +201,10 @@
                                         </thead>
                                         <tbody>
                                             <tr class="gradeX">
-                                                <td>53</td>
+                                              <td>Telangana</td>
+                                              <td>Khammam</td>
+                                              <td>Polavaram</td>
+                                                <td>Site name 1</td>
                                                 <td>4.0
                                                 </td>
                                                 <td>95</td>
@@ -182,7 +216,10 @@
                                                 <td class="center">X</td>
                                             </tr>
                                             <tr class="gradeC">
-                                                <td>58</td>
+                                              <td>Maharashtra</td>
+                                              <td>&nbsp;</td>
+                                              <td>&nbsp;</td>
+                                                <td>Site name 2</td>
                                                 <td>5.0
                                                 </td>
                                                 <td>95</td>
@@ -194,7 +231,10 @@
                                                 <td class="center">C</td>
                                             </tr>
                                             <tr class="gradeA">
-                                                <td>57</td>
+                                              <td>Andhra Pradesh</td>
+                                              <td>East Godavari</td>
+                                              <td>&nbsp;</td>
+                                                <td>Site name 3</td>
                                                 <td>5.5
                                                 </td>
                                                 <td>95</td>
@@ -206,7 +246,10 @@
                                                 <td class="center">A</td>
                                             </tr>
                                             <tr class="gradeA">
-                                                <td>68</td>
+                                              <td>Andhra Pradesh</td>
+                                              <td>West Godava</td>
+                                              <td>&nbsp;</td>
+                                                <td>Site name 4</td>
                                                 <td>6
                                                 </td>
                                                 <td>98+</td>
@@ -218,7 +261,10 @@
                                                 <td class="center">A</td>
                                             </tr>
                                             <tr class="gradeA">
-                                                <td>68</td>
+                                              <td>Andhra Pradesh</td>
+                                              <td>&nbsp;</td>
+                                              <td>&nbsp;</td>
+                                                <td>Site name 5</td>
                                                 <td>19</td>
                                                 <td>90 </td>
                                                 <td class="center">7</td>
@@ -229,7 +275,10 @@
                                                 <td class="center">A</td>
                                             </tr>
                                             <tr class="gradeA">
-                                                <td>68</td>
+                                              <td> Odisha</td>
+                                              <td>&nbsp;</td>
+                                              <td>&nbsp;</td>
+                                                <td>Site name 6</td>
                                                 <td>50</td>
                                                 <td>90</td>
                                                 <td class="center">6</td>
@@ -240,7 +289,10 @@
                                                 <td class="center">A</td>
                                             </tr>
                                             <tr class="gradeA">
-                                                <td>50</td>
+                                              <td class="gradeC">Maharashtra</td>
+                                              <td>&nbsp;</td>
+                                              <td>&nbsp;</td>
+                                                <td>Site name 7</td>
                                                 <td>1.0</td>
                                                 <td>98</td>
                                                 <td class="center">1.7</td>
@@ -251,6 +303,10 @@
                                                 <td class="center">A</td>
                                             </tr>
 
+                                            <tr>
+                                              <td class="gradeC">Maharashtra</td>
+                                              <td>                                              
+                                              <td>                                              
                                             </tfoot>
                                     </table>
                                 </div>
@@ -298,10 +354,22 @@
                         className: "text-center",
                         "targets": "_all"
                     },
-                    {
-                        className: "text-left",
-                        targets: [1]
-                    }
+                   
+                    // {
+                    //     "targets": [1],
+                    //     "visible": false,
+                    //     "searchable": true
+                    // },
+                    // {
+                    //     "targets": [2],
+                    //     "visible": false,
+                    //     "searchable": true
+                    // },
+                    // {
+                    //     "targets": [3],
+                    //     "visible": false,
+                    //     "searchable": true
+                    // }
                 ],
                 dom: '<"html5buttons"B>lTfgtp',
                 buttons: [
@@ -329,7 +397,9 @@
                 ]
 
             });
-
+            $('#state-filter').on('change', function () {
+                table.search(this.value).draw();
+            });
         });
     </script>
 </body>
