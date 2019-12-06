@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 </head>
-
 <body class="top-navigation md-skin">
     <div id="wrapper">
         <div id="page-wrapper" class="gray-bg">
@@ -104,7 +102,7 @@
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Name</a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a href="profile.html" class="dropdown-item">Profile</a>
-                                    <a href="login.html"class="dropdown-item"> Logout</a>
+                                    <a href="login.html" class="dropdown-item"> Logout</a>
                                 </div>
                             </li>
                         </ul>
@@ -117,23 +115,18 @@
                         <div class="ibox ">
                             <div class="ibox-title">
                                 <h5>Forestry Interventions - Natural Landscape</h5>
-                                <!-- <div class="ibox-tools">
-                            <a class="collapse-link">
-                                <i class="fa fa-chevron-up"></i>
-                            </a>
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                                <i class="fa fa-wrench"></i>
-                            </a>
-                            <ul class="dropdown-menu dropdown-user">
-                                <li><a href="#" class="dropdown-item">Config option 1</a>
-                                </li>
-                                <li><a href="#" class="dropdown-item">Config option 2</a>
-                                </li>
-                            </ul>
-                            <a class="close-link">
-                                <i class="fa fa-times"></i>
-                            </a>
-                        </div> -->
+                                <div class="ibox-tools">
+                                    <div class="form-inline">
+                                        <label class="mr-1">Select Year</label>
+                                        <select required data-placeholder="Select year" class="form-control"
+                                            tabindex="2">
+                                            <option value="">Select</option>
+                                            <option value="2019">2019 - 2020</option>
+                                            <option value="2020">2020 - 2021</option>
+                                            <option value="2021">2021 - 2022</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                             <div class="ibox-content">
                                 <form role="form" class="row">
@@ -171,7 +164,6 @@
                                         <select data-placeholder="Choose a District..." class="chosen-select"
                                             tabindex="5">
                                             <option value="">Select</option>
-
                                         </select>
                                     </div>
                                     <div class="col-md-4 col-sm-12 form-group"><label>Forest Block</label>
@@ -212,10 +204,9 @@
                                         </select>
                                     </div>
                                     <div class="col-md-12 col-sm-12 form-group">
-                                        
                                         <div class="i-checks">
-                                                <label>Density of Forest
-                                                        Area</label>
+                                            <label>Density of Forest
+                                                Area</label>
                                             <label> <input type="radio" value="option1" name="a">
                                                 dense (>70%)</label>
                                             <label> <input type="radio" checked="" value="option2" name="a"> Moderately
@@ -344,6 +335,238 @@
                                                     facing</label>
                                             </div>
                                         </div>
+                                        <div class="col-md-4 col-sm-12 form-group"><label>Average Annual Rainfall (in
+                                                mm)</label>
+                                            <input type="number" class="form-control" tabindex="1">
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <label>Special features of the site(e.g. Rocky surface, Ravine/Gulley, Near
+                                                to monument etc.)</label>
+                                            <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                        </div>
+                                        <div class="col-md-2 col-sm-12">
+                                            <div class="i-checks">
+                                                <label> Accessibility1</label>
+                                                <label> <input type="radio" value="option1" name="i">Accessible</label>
+                                                <label> <input type="radio" checked="" value="option2"
+                                                        name="i">Inaccessible</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 form-group"><label>Distance from main
+                                                River/Tributarywith name of the river (Approximatedistance in m)
+                                            </label>
+                                            <input type="number" class="form-control" tabindex="1">
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <h4>Suggestive Native Species for Plantation</h4>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12 form-group">
+                                            <label>Trees</label>
+                                            <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12 form-group">
+                                            <label>Shrubs</label>
+                                            <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12 form-group">
+                                            <label>Herbs & Grasses </label>
+                                            <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                        </div>
+                                        <div class="col-md-3 col-sm-12 form-group"><label>Suggestivespacing and Pit
+                                                size</label>
+                                            <input type="text" class="form-control" tabindex="1">
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <h4> Details of Fencing works, if required before plantation</h4>
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 form-group"><label>Type of fencing</label>
+                                            <input type="text" class="form-control" tabindex="1">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 form-group"><label>Length of fencing</label>
+                                            <input type="text" class="form-control" tabindex="1">
+                                        </div>
+                                        <div class="col-md-4 col-sm-12 form-group"><label>Cost (Approximate in Lakh
+                                                Rs.)</label>
+                                            <input type="text" class="form-control" tabindex="1">
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <div class="i-checks">
+                                                <label> Details of SMCworks, if required before plantation</label>
+                                                <label> <input type="checkbox" value="option1" name="x">Contour
+                                                    trenching</label>
+                                                <label> <input type="checkbox" value="option2" name="c">Staggered
+                                                    trenching</label>
+                                                <label> <input type="checkbox" value="optio3" name="x">Gully
+                                                    plugging</label>
+                                                <label> <input type="checkbox" value="option4" name="x">Bunding</label>
+                                                <label> <input type="checkbox" value="option5" name="x">Check
+                                                    dam</label>
+                                                <label> <input type="checkbox" value="option6" name="x">Any other SMC
+                                                    measure</label>
+                                                <label> <input type="checkbox" value="option7" name="x">Other <input
+                                                        type="text" placeholder="Specify"></label>
+                                                <label> Number of new SMC structuresproposed <input type="text"
+                                                        placeholder=""></label>
+                                                <label> Number of existing SMC structures need repair/upgrade <input
+                                                        type="text" placeholder=""></label>
+                                                <label> Cost (Approximate in Lakh Rs.) <input type="text"
+                                                        placeholder=""></label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <label>Extent of intervention(Plantation/Aided Natural Regeneration)(In
+                                                hectare)</label>
+                                            <label>Year 01<input type="text" placeholder=""></label>
+                                            <label>Year 02<input type="text" placeholder=""></label>
+                                            <label>Year 03<input type="text" placeholder=""></label>
+                                            <label>Year 04<input type="text" placeholder=""></label>
+                                            <label>Year 05<input type="text" placeholder=""></label>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <label>Planting/ANRcost including nursery cost (Approximate in Lakh Rs.
+                                                )</label>
+                                            <label>Year 01<input type="text" placeholder=""></label>
+                                            <label>Year 02<input type="text" placeholder=""></label>
+                                            <label>Year 03<input type="text" placeholder=""></label>
+                                            <label>Year 04<input type="text" placeholder=""></label>
+                                            <label>Year 05<input type="text" placeholder=""></label>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <label>Maintenance cost of plantation for threeyears (Approximate in Lakh
+                                                Rs.)</label>
+                                            <label>Year 01<input type="text" placeholder=""></label>
+                                            <label>Year 02<input type="text" placeholder=""></label>
+                                            <label>Year 03<input type="text" placeholder=""></label>
+                                            <label>Year 04<input type="text" placeholder=""></label>
+                                            <label>Year 05<input type="text" placeholder=""></label>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <table class="table table-sm">
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width:300px">Budget proposed for supporting
+                                                            activities (Approximate in Lakh Rs.) <strong>(Provide
+                                                                consolidated budget for the entire Forest
+                                                                Division)</strong></th>
+                                                        <th class="text-center">Year 01</th>
+                                                        <th class="text-center">Year 02</th>
+                                                        <th class="text-center">Year 03</th>
+                                                        <th class="text-center">Year 04</th>
+                                                        <th class="text-center">Year 05</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Capacity building</td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Awareness raising</td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Adaptive R & D</td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Monitoring and evaluation</td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Miscelaneous activity</td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="font-bold">Total</td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <label>Remarks, if any(e.g. FSR, approved CDL rate for district)
+                                                etc.</label>
+                                            <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                        </div>
+                                        <div class="col-md-12 col-sm-12 form-group">
+                                            <label>GPS coordinates of the site at all the corners(As per the shape of
+                                                site, minimum 3points are required)(Record in decimal degrees: record up
+                                                to 6 decimal places-e.g.Latitude:17.555202°Longitude:78.443713°)</label>
+                                            <table class="table table-sm">
+                                                <thead>
+                                                    <th></th>
+                                                    <th class="text-center">Corner 1</th>
+                                                    <th class="text-center">Corner 2</th>
+                                                    <th class="text-center">Corner 3</th>
+                                                    <th class="text-center">Corner 4</th>
+                                                    <th class="text-center">Corner 5</th>
+                                                    <th class="text-center">Corner 6</th>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="font-bold">Latitude</td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="font-bold">Longitude</td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                        <td><input type="text" placeholder=""></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <div class="i-checks">
+                                                <label> ROUGH SKETCH OF TREATMENT SITE / MAP (AS AN ATTACHMENT)</label>
+                                                <label> <input type="radio" value="option1" name="cc">
+                                                    Yes</label>
+                                                <label> <input type="radio" value="option2" name="cc">
+                                                    No</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12 form-group">
+                                            <div class="i-checks">
+                                                <label>CURRENT PHOTOGRAPH (Share photo in the Co-ordinator’sWhatsApp
+                                                    group</label>
+                                                <label> <input type="radio" value="option1" name="dd">
+                                                    Yes</label>
+                                                <label> <input type="radio"  value="option2" name="dd"> No </label>
+                                            </div>
+                                        </div>
+                                        <br />
                                         <div class="col-sm-4 col-sm-offset-2 mt-4">
                                             <button class="btn btn-white btn-sm" type="submit">Cancel</button>
                                             <button class="btn btn-primary btn-sm" type="submit">Save changes</button>
@@ -375,7 +598,6 @@
     <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <!-- Chosen -->
     <script src="js/plugins/chosen/chosen.jquery.js"></script>
-
     <!-- iCheck -->
     <script src="js/plugins/iCheck/icheck.min.js"></script>
     <script>
@@ -395,5 +617,4 @@
         }));
     </script>
 </body>
-
 </html>
