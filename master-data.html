@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="top-navigation md-skin">
+    <div id="wrapper">
+
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom white-bg">
+                <nav class="navbar navbar-expand-lg navbar-static-top" role="navigation">
+                    <a href="#" class="navbar-brand">ICFRE</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-reorder"></i>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav mr-auto">
+                            <!-- <li class="active">
+                                <a aria-expanded="false" role="button" href="layouts.html"> Back to main Layout page</a>
+                            </li> -->
+                            <li class="dropdown">
+                                <a id="dLabel" role="button" data-toggle="dropdown" class="dropdown-toggle"
+                                    data-target="#">
+                                    Create
+                                </a>
+                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                    <li class="divider"></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Forestry Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">Natural Landscape</a></li>
+                                            <li><a href="#">Agricultural Landscape</a></li>
+                                            <li><a href="#">Urban Landscape</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Other Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">Wetland Managemnet (Natural and
+                                                    Artificial)</a></li>
+                                            <li><a href="#">Riparian Wildlife Management</a></li>
+                                            <li><a href="#">Soil and Water Conservation</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown"> Reports</a>
+                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                    <li class="divider"></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Forestry Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="list.html">Natural Landscape</a></li>
+                                            <li><a href="#">Agricultural Landscape</a></li>
+                                            <li><a href="#">Urban Landscape</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Other Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">Wetland Managemnet (Natural and
+                                                    Artificial)</a></li>
+                                            <li><a href="#">Riparian Wildlife Management</a></li>
+                                            <li><a href="#">Soil and Water Conservation</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown"> Audit</a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown"> Admin</a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="users.html">Users</a></li>
+                                    <li><a href="master-data.html">Master Data</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Name</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="profile.html" class="dropdown-item">Profile</a>
+                                    <a href="login.html" class="dropdown-item"> Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5>States</h5>
+                                <div class="ibox-tools">
+                                    <button type="button" class="btn btn-sm btn btn-sm-w-m btn btn-sm-primary" data-toggle="modal"
+                                        data-target="#stateadd">Add</button>
+                                </div>
+                            </div>
+                            <div class="ibox-content scroll_content">
+
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Parent</th>
+                                            <th>Name</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>India</td>
+                                            <td>Chhattisgarh</td>
+                                            <td>
+                                                <a href="#" data-toggle="modal" data-target="#stateedit"><i class="fa fa-pencil btn btn-sm"></i></a>
+                                                <a href="#" data-toggle="tooltip" class="deletedata"><i class="fa fa-trash text-danger btn btn-sm"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>India</td>
+                                            <td>Maharashtra</td>
+                                             <td>
+                                                <a href="#" data-toggle="modal" data-target="#stateedit"><i class="fa fa-pencil btn btn-sm"></i></a>
+                                                <a href="#" data-toggle="tooltip" class="deletedata"><i class="fa fa-trash text-danger btn btn-sm"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>India</td>
+                                            <td>Telangana</td>
+                                             <td>
+                                                <a href="#" data-toggle="modal" data-target="#stateedit"><i class="fa fa-pencil btn btn-sm"></i></a>
+                                                <a href="#" data-toggle="tooltip" class="deletedata"><i class="fa fa-trash text-danger btn btn-sm"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>India</td>
+                                            <td>Andhra Pradesh</td>
+                                             <td>
+                                                <a href="#" data-toggle="modal" data-target="#stateedit"><i class="fa fa-pencil btn btn-sm"></i></a>
+                                                <a href="#" data-toggle="tooltip" class="deletedata"><i class="fa fa-trash text-danger btn btn-sm"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>India</td>
+                                            <td>Madhya Pradesh</td>
+                                             <td>
+                                                <a href="#" data-toggle="modal" data-target="#stateedit"><i class="fa fa-pencil btn btn-sm"></i></a>
+                                                <a href="#" data-toggle="tooltip" class="deletedata"><i class="fa fa-trash text-danger btn btn-sm"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>India</td>
+                                            <td>Karnataka</td>
+                                             <td>
+                                                <a href="#" data-toggle="modal" data-target="#stateedit"><i class="fa fa-pencil btn btn-sm"></i></a>
+                                                <a href="#" data-toggle="tooltip" class="deletedata"><i class="fa fa-trash text-danger btn btn-sm"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>India</td>
+                                            <td>Orissa</td>
+                                             <td>
+                                                <a href="#" data-toggle="modal" data-target="#stateedit"><i class="fa fa-pencil btn btn-sm"></i></a>
+                                                <a href="#" data-toggle="tooltip" class="deletedata"><i class="fa fa-trash text-danger btn btn-sm"></i></a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 
+			planned for footer if any 
+        <div class="footer">
+            <div class="float-right">
+                10GB of <strong>250GB</strong> Free.
+            </div>
+            <div>
+                <strong>Copyright</strong> Example Company &copy; 2014-2018
+            </div>
+        </div> -->
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class="modal inmodal" id="stateadd" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content animated fadeIn">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+                    <h4 class="modal-title">Add State</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group"><label>Country</label>
+                            <select class="form-control m-b" name="state" disabled>
+                                <option selected>India</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group"><label>State</label> <input type="text" placeholder="State Name"
+                                class="form-control"></div>
+                        <div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn btn-sm-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-sm btn btn-sm-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal inmodal" id="stateedit" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content animated fadeIn">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+                    <h4 class="modal-title">Add State</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group"><label>Country</label>
+                            <select class="form-control m-b" name="state" disabled>
+                                <option selected>India</option>
+
+                            </select>
+                        </div>
+                        <div class="form-group"><label>State</label> <input type="text" placeholder="State Name"
+                                value="Telangana" class="form-control"></div>
+                        <div>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-sm btn btn-sm-white" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-sm btn btn-sm-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <!-- Sweet alert -->
+    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            // Add slimscroll to element
+            $('.scroll_content').slimscroll({
+                height: '330px'
+            })
+            $('.deletedata').click(function () {
+                swal({
+                        title: "Are you sure?",
+                        text: "Your will not be able to recover this record!",
+                        type: "warning",
+                        showCancelButton: true,
+                        confirmButtonColor: "#DD6B55",
+                        confirmButtonText: "Yes, delete it!",
+                        cancelButtonText: "No, keep user",
+                        closeOnConfirm: false,
+                        closeOnCancel: false
+                    },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            swal("Deleted!", "Record has been deleted.", "success");
+                        } else {
+                            swal("Cancelled", "Record is not deleted :)", "error");
+                        }
+                    });
+            });
+        });
+    </script>
+</body>
+
+</html>
