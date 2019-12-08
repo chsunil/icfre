@@ -96,7 +96,7 @@
                                     data-toggle="dropdown"> Admin</a>
                                 <ul role="menu" class="dropdown-menu">
                                     <li><a href="users.html">Users</a></li>
-                                   <li><a href="master-data.html">Master Data</a></li>
+                                    <li><a href="master-data.html">Master Data</a></li>
                                     <li><a href="">Menu item</a></li>
                                     <li><a href="">Menu item</a></li>
                                 </ul>
@@ -140,32 +140,41 @@
                             </div> -->
                             </div>
                             <div class="ibox-content">
+                                    <h2 class="text-center">DPR PREPARATION OF FORESTRY INTERVENTIONS FOR GODAVARI <br />
+                                       DIVISION LEVEL PROFORMA OF DATA COLLECTION<br />
+                                        (Institute of Forest Biodiversity Hyderabad)</h2>
                                 <div class="row">
-                                    <div class="col-md-3 col-sm-12 form-group"><label>Select State</label>
-                                        <select id="state-filter" data-placeholder="Choose a Country..."
+                                    <div class="col-md-3 col-sm-12 form-group"><label>State</label>
+                                        <select disabled id="state-filter" data-placeholder="Choose a Country..."
                                             class="form-control" tabindex="2">
                                             <option value="">All</option>
-                                            <option value="ap">Andhra Pradesh</option>
+                                            <option selected value="ap">Andhra Pradesh</option>
                                             <option value="mh">Maharastra</option>
                                             <option value="ts">Telangana</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-3 col-sm-12 form-group"><label>Select District</label>
-                                        <select id="district-filter" data-placeholder="Choose a District..."
+                                    <div class="col-md-3 col-sm-12 form-group"><label>District</label>
+                                        <select disabled id="district-filter" data-placeholder="Choose a District..."
                                             class="form-control" tabindex="3">
                                             <option value="">All</option>
-                                            <option value="Adilabad"> Adilabad</option>
+                                            <option selected value="Adilabad"> Adilabad</option>
                                             <option value="Hyderabad">Hyderabad</option>
                                             <option value="Jagitial">Jagitial</option>
                                         </select>
                                     </div>
-                                    <div class="col-md-3 col-sm-12 form-group"><label>Select Mandal</label>
-                                        <select data-placeholder="Choose a District..."
-                                            class="form-control" tabindex="3">
+                                    <div class="col-md-3 col-sm-12 form-group"><label>Forest Divison</label>
+                                        <select disabled data-placeholder="Choose a District..." class="form-control"
+                                            tabindex="3">
                                             <option value="">All</option>
-                                            <option value="Adilabad"> Adilabad</option>
+                                            <option selected value="Adilabad"> Adilabad</option>
                                             <option value="Hyderabad">Hyderabad</option>
                                             <option value="Jagitial">Jagitial</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12 form-group"><label>Model No</label>
+                                        <select disabled data-placeholder="Choose a District..." class="form-control"
+                                            tabindex="3">
+                                            <option selected value=""></option>
                                         </select>
                                     </div>
                                 </div>
@@ -173,14 +182,14 @@
                                     <table class="table table-striped table-bordered table-hover dataTables-example">
                                         <thead>
                                             <tr>
-                                              <th rowspan="3">State</th>
-                                              <th rowspan="3">District</th>
-                                              <th rowspan="3">Mandal</th>
+
                                                 <th rowspan="3">Treatment Site Name</th>
                                                 <th colspan="2" class="text-center">Year</th>
                                                 <th colspan="2" class="text-center">Year</th>
                                                 <th colspan="2" class="text-center">Year</th>
                                                 <th colspan="2" class="text-center">Year</th>
+                                                <th rowspan="3">Total Area</th>
+                                                <th rowspan="3">Total Cost</th>
                                             </tr>
                                             <tr>
                                                 <th colspan="2" class="text-center">2019 - 20</th>
@@ -201,9 +210,7 @@
                                         </thead>
                                         <tbody>
                                             <tr class="gradeX">
-                                              <td>Telangana</td>
-                                              <td>Khammam</td>
-                                              <td>Polavaram</td>
+
                                                 <td>Site name 1</td>
                                                 <td>4.0
                                                 </td>
@@ -214,11 +221,11 @@
                                                 <td class="center">X</td>
                                                 <td class="center">4</td>
                                                 <td class="center">X</td>
+                                                <td class="center">4</td>
+                                                <td class="center">4</td>
                                             </tr>
                                             <tr class="gradeC">
-                                              <td>Maharashtra</td>
-                                              <td>&nbsp;</td>
-                                              <td>&nbsp;</td>
+
                                                 <td>Site name 2</td>
                                                 <td>5.0
                                                 </td>
@@ -229,11 +236,11 @@
                                                 <td class="center">C</td>
                                                 <td class="center">5</td>
                                                 <td class="center">C</td>
+                                                <td class="center">4</td>
+                                                <td class="center">4</td>
                                             </tr>
                                             <tr class="gradeA">
-                                              <td>Andhra Pradesh</td>
-                                              <td>East Godavari</td>
-                                              <td>&nbsp;</td>
+
                                                 <td>Site name 3</td>
                                                 <td>5.5
                                                 </td>
@@ -244,11 +251,11 @@
                                                 <td class="center">A</td>
                                                 <td class="center">5.5</td>
                                                 <td class="center">A</td>
+                                                <td class="center">4</td>
+                                                <td class="center">4</td>
                                             </tr>
                                             <tr class="gradeA">
-                                              <td>Andhra Pradesh</td>
-                                              <td>West Godava</td>
-                                              <td>&nbsp;</td>
+
                                                 <td>Site name 4</td>
                                                 <td>6
                                                 </td>
@@ -259,11 +266,11 @@
                                                 <td class="center">A</td>
                                                 <td class="center">6</td>
                                                 <td class="center">A</td>
+                                                <td class="center">4</td>
+                                                <td class="center">4</td>
                                             </tr>
                                             <tr class="gradeA">
-                                              <td>Andhra Pradesh</td>
-                                              <td>&nbsp;</td>
-                                              <td>&nbsp;</td>
+
                                                 <td>Site name 5</td>
                                                 <td>19</td>
                                                 <td>90 </td>
@@ -273,11 +280,11 @@
                                                 <td class="center">A</td>
                                                 <td class="center">7</td>
                                                 <td class="center">A</td>
+                                                <td class="center">4</td>
+                                                <td class="center">4</td>
                                             </tr>
                                             <tr class="gradeA">
-                                              <td> Odisha</td>
-                                              <td>&nbsp;</td>
-                                              <td>&nbsp;</td>
+
                                                 <td>Site name 6</td>
                                                 <td>50</td>
                                                 <td>90</td>
@@ -287,11 +294,11 @@
                                                 <td class="center">A</td>
                                                 <td class="center">6</td>
                                                 <td class="center">A</td>
+                                                <td class="center">4</td>
+                                                <td class="center">4</td>
                                             </tr>
                                             <tr class="gradeA">
-                                              <td class="gradeC">Maharashtra</td>
-                                              <td>&nbsp;</td>
-                                              <td>&nbsp;</td>
+
                                                 <td>Site name 7</td>
                                                 <td>1.0</td>
                                                 <td>98</td>
@@ -301,13 +308,25 @@
                                                 <td class="center">A</td>
                                                 <td class="center">1.7</td>
                                                 <td class="center">A</td>
+                                                <td class="center">4</td>
+                                                <td class="center">4</td>
                                             </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr class="gradeA">
 
-                                            <tr>
-                                              <td class="gradeC">Maharashtra</td>
-                                              <td>                                              
-                                              <td>                                              
-                                            </tfoot>
+                                                <td>Grand Total</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td><td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tfoot>
                                     </table>
                                 </div>
 
@@ -348,13 +367,14 @@
     <script>
         $(document).ready(function () {
             $('.dataTables-example').DataTable({
+                searching: false,
                 pageLength: 25,
                 responsive: true,
                 "columnDefs": [{
                         className: "text-center",
                         "targets": "_all"
                     },
-                   
+
                     // {
                     //     "targets": [1],
                     //     "visible": false,
