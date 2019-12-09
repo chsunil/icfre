@@ -4719,6 +4719,10 @@ body.body-small .footer.fixed {
 .table > thead:first-child > tr:first-child > th {
   border-top: 0;
 }
+caption
+{
+  caption-side: top;
+}
 .table-bordered {
   border: 1px solid #EBEBEB;
 }

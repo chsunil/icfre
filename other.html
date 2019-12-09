@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/plugins/chosen/bootstrap-chosen.css" rel="stylesheet">
+    <!-- Sweet Alert -->
+    <link href="css/plugins/sweetalert/sweetalert.css" rel="stylesheet">
+    <link href="css/plugins/iCheck/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="top-navigation md-skin">
+    <div id="wrapper">
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom white-bg">
+                <nav class="navbar navbar-expand-lg navbar-static-top" role="navigation">
+                    <a href="#" class="navbar-brand">ICFRE</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-reorder"></i>
+                    </button>
+                    <div class="navbar-collapse collapse" id="navbar">
+                        <ul class="nav navbar-nav mr-auto">
+                            <!-- <li class="active">
+                                <a aria-expanded="false" role="button" href="layouts.html"> Back to main Layout page</a>
+                            </li> -->
+                            <li class="dropdown">
+                                <a id="dLabel" role="button" data-toggle="dropdown" class="dropdown-toggle"
+                                    data-target="#">
+                                    Create
+                                </a>
+                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                    <li class="divider"></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Forestry Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">Natural Landscape</a></li>
+                                            <li><a href="#">Agricultural Landscape</a></li>
+                                            <li><a href="#">Urban Landscape</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Other Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">Wetland Managemnet (Natural and
+                                                    Artificial)</a></li>
+                                            <li><a href="#">Riparian Wildlife Management</a></li>
+                                            <li><a href="#">Soil and Water Conservation</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown"> Reports</a>
+                                <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                                    <li class="divider"></li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Forestry Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="list.html">Natural Landscape</a></li>
+                                            <li><a href="#">Agricultural Landscape</a></li>
+                                            <li><a href="#">Urban Landscape</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu">
+                                        <a tabindex="-1" href="#">Other Interventions</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a tabindex="-1" href="#">Wetland Managemnet (Natural and
+                                                    Artificial)</a></li>
+                                            <li><a href="#">Riparian Wildlife Management</a></li>
+                                            <li><a href="#">Soil and Water Conservation</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown"> Audit</a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a aria-expanded="false" role="button" href="#" class="dropdown-toggle"
+                                    data-toggle="dropdown"> Admin</a>
+                                <ul role="menu" class="dropdown-menu">
+                                    <li><a href="users.html">Users</a></li>
+                                    <li><a href="master-data.html">Master Data</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                    <li><a href="">Menu item</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">User Name</a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="profile.html" class="dropdown-item">Profile</a>
+                                    <a href="login.html" class="dropdown-item"> Logout</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="wrapper wrapper-content animated fadeInRight">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ibox ">
+                            <div class="ibox-title">
+                                <h5>States</h5>
+                                <!-- <div class="ibox-tools">
+                                    <button type="button" class="btn btn-sm btn btn-sm-w-m btn btn-sm-primary" data-toggle="modal"
+                                        data-target="#stateadd">Add</button>
+                                </div> -->
+                            </div>
+                            <div class="ibox-content">
+                                <h2 class="text-center">DPR PREPARATION OF FORESTRY INTERVENTIONS FOR GODAVARI <br />
+                                    PROFORMA FOR DATA COLLECTION FROM PROPOSED SITE<br />
+                                    (Institute of Forest Biodiversity Hyderabad)</h2>
+                                <form role="form" class="row">
+                                    <div class="col-md-12 col-sm-12 form-group">
+                                        <div class="i-checks">
+                                            <label>Density of Forest Area</label>
+                                            <label> <input type="radio" value="option1" name="a">Wetland Management
+                                                (Natural/Artificial)</label>
+                                            <label> <input type="radio" checked="" value="option2" name="a"> Riparian
+                                                Wildlife Management</label>
+                                            <label> <input type="radio" value="option1" name="a">Soil and Water
+                                                Conservation</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Name of Site</label>
+                                        <input type="text" class="form-control" tabindex="1">
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Area (In Hectare)</label>
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Name of Site</label>
+                                        <input type="text" class="form-control" tabindex="1">
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Area (In Hectare)</label>
+                                        <input type="number" class="form-control">
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>State</label>
+                                        <select data-placeholder="Choose a Country..." class="chosen-select"
+                                            tabindex="2">
+                                            <option value="">Select</option>
+                                            <option value="ap">Andhra Pradesh</option>
+                                            <option value="mh">Maharastra</option>
+                                            <option value="ts">Telangana</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>District</label>
+                                        <select data-placeholder="Choose a District..." class="chosen-select"
+                                            tabindex="3">
+                                            <option value="">Select</option>
+                                            <option value="Adilabad"> Adilabad</option>
+                                            <option value="Hyderabad">Hyderabad</option>
+                                            <option value="Jagitial">Jagitial</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Forest Division</label>
+                                        <select data-placeholder="Choose a Division..." class="chosen-select"
+                                            tabindex="4">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Forest Range</label>
+                                        <select data-placeholder="Choose a Range..." class="chosen-select" tabindex="5">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Forest Block</label>
+                                        <select data-placeholder="Choose a Block..." class="chosen-select" tabindex="6">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Forest Beat</label>
+                                        <select data-placeholder="Choose a Beat..." class="chosen-select" tabindex="7">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Development Block (Mandal Name)
+                                        </label>
+                                        <select data-placeholder="Choose a Mandal..." class="chosen-select"
+                                            tabindex="8">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Tehsil</label>
+                                        <select data-placeholder="Choose a Tehsil..." class="chosen-select"
+                                            tabindex="9">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Panchayat</label>
+                                        <select data-placeholder="Choose a Panchayat..." class="chosen-select"
+                                            tabindex="10">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Municipal
+                                            Corporation/Notified Area
+                                            Council</label>
+                                        <select data-placeholder="Choose ..." class="chosen-select" tabindex="11">
+                                            <option value="">Select</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="i-checks">
+                                            <label>Current Land Use Pattern</label>
+                                            <label> <input type="radio" value="option1" name="b">Natural
+                                                forest</label>
+                                            <label> <input type="radio" checked="" value="option2" name="b">Tree
+                                                plantation</label>
+                                            <label> <input type="radio" value="option3" name="b">Grassland</label>
+                                            <label> <input type="radio" value="option4" name="b">Cultivated
+                                                land</label>
+                                            <label> <input type="radio" value="option5" name="b">Barren/Waste
+                                                land</label>
+                                            <label> <input type="radio" value="option6"
+                                                    name="b">Waterbody/Wetland</label>
+                                            <label> <input type="radio" value="option7" name="b">Scrub Forest</label>
+                                            <label> <input type="radio" value="option8" name="b">Grazing Land</label>
+                                            <label> <input type="radio" value="option9" name="b">Temple Land</label>
+                                            <label> <input type="radio" value="option10" name="b">Canal side
+                                                Land</label>
+                                            <label> <input type="radio" value="option11" name="b">Other <input
+                                                    type="text" placeholder="Specify"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="i-checks">
+                                            <label>Previous Land Use Pattern (Five years ago)</label>
+                                            <label> <input type="radio" value="option1" name="bb">Natural
+                                                forest</label>
+                                            <label> <input type="radio" checked="" value="option2" name="bb">Tree
+                                                plantation</label>
+                                            <label> <input type="radio" value="option3" name="bb">Grassland</label>
+                                            <label> <input type="radio" value="option4" name="bb">Cultivated
+                                                land</label>
+                                            <label> <input type="radio" value="option5" name="bb">Barren/Waste
+                                                land</label>
+                                            <label> <input type="radio" value="option6"
+                                                    name="b">Waterbody/Wetland</label>
+                                            <label> <input type="radio" value="option7" name="bb">Scrub Forest</label>
+                                            <label> <input type="radio" value="option8" name="bb">Grazing Land</label>
+                                            <label> <input type="radio" value="option9" name="bb">Temple Land</label>
+                                            <label> <input type="radio" value="option10" name="bb">Canal side
+                                                Land</label>
+                                            <label> <input type="radio" value="option11" name="bb">Other <input
+                                                    type="text" placeholder="Specify"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="i-checks">
+                                            <label> Land Ownership Status</label>
+                                            <label> <input type="radio" value="option1" name="c">Reserve
+                                                forest</label>
+                                            <label> <input type="radio" checked="" value="option2" name="c">Revenue
+                                                land</label>
+                                            <label> <input type="radio" value="option3" name="c">Private land</label>
+                                            <label> <input type="radio" value="option4" name="c">Leased land</label>
+                                            <label> <input type="radio" value="option5" name="c">Community
+                                                land</label>
+                                            <label> <input type="radio" value="option6" name="c">Any other
+                                                land</label>
+                                            <label> <input type="radio" value="option7" name="c">Other <input
+                                                    type="text" placeholder="Specify"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="i-checks">
+                                            <label> Geology</label>
+                                            <label> <input type="radio" value="option1" name="d">Basalt</label>
+                                            <label> <input type="radio" checked="" value="option2"
+                                                    name="d">Granite</label>
+                                            <label> <input type="radio" value="option3" name="d">Gneiss</label>
+                                            <label> <input type="radio" value="option4" name="d">Sandstone</label>
+                                            <label> <input type="radio" value="option5" name="d">Shales</label>
+                                            <label> <input type="radio" value="option6" name="d">Limestone</label>
+                                            <label> <input type="radio" value="option7" name="d">Other <input
+                                                    type="text" placeholder="Specify"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="i-checks">
+                                            <label> Soil Type</label>
+                                            <label> <input type="radio" value="option1" name="e">Alluvial
+                                                soil(Loamy)</label>
+                                            <label> <input type="radio" checked="" value="option2" name="e">Sandy
+                                                soil</label>
+                                            <label> <input type="radio" value="option3" name="e">Clayey soil</label>
+                                            <label> <input type="radio" value="option4" name="e">Lateritic
+                                                soil</label>
+                                            <label> <input type="radio" value="option5" name="e">Red soil</label>
+                                            <label> <input type="radio" value="option6" name="e">Brown soil</label>
+                                            <label> <input type="radio" value="option7" name="e">Black
+                                                soil</label>
+                                            <label> <input type="radio" value="option8" name="e">>Saline/Alkaline
+                                                soil</label>
+                                            <label> <input type="radio" value="option9" name="e">Other <input
+                                                    type="text" placeholder="Specify"></label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12">
+                                        <div class="i-checks">
+                                            <label> Terrain</label>
+                                            <label> <input type="radio" value="option1" name="f">Hilly area</label>
+                                            <label> <input type="radio" checked="" value="option2" name="f">Plain
+                                                area</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 col-sm-12">
+                                        <div class="i-checks">
+                                            <label> Slope</label>
+                                            <label> <input type="radio" value="option1" name="g">Zero-10
+                                                degree</label>
+                                            <label> <input type="radio" checked="" value="option2"
+                                                    name="g">11-20degree</label>
+                                            <label> <input type="radio" value="option1" name="g">21-30degree</label>
+                                            <label> <input type="radio" checked="" value="option2" name="g">Above 30
+                                                degree</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="i-checks">
+                                            <label> Aspect (In case of Hilly area)</label>
+                                            <label> <input type="radio" value="option1" name="i">North
+                                                facing</label>
+                                            <label> <input type="radio" checked="" value="option2" name="i">South
+                                                facing</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Average Annual Rainfall (in
+                                            mm)</label>
+                                        <input type="number" class="form-control" tabindex="1">
+                                    </div>
+                                    <div class="col-md-5 col-sm-12 form-group">
+                                        <label>Special features of the site(e.g. Rocky surface, Ravine/Gulley, Near
+                                            to monument etc.)</label>
+                                        <textarea class="form-control" tabindex="13"> </textarea>
+                                    </div>
+                                    <div class="col-md-3 col-sm-12">
+                                        <div class="i-checks">
+                                            <label> Accessibility1</label>
+                                            <label> <input type="radio" value="option1" name="i">Accessible</label>
+                                            <label> <input type="radio" checked="" value="option2"
+                                                    name="i">Inaccessible</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Distance from nearest Road
+                                            (Approximate distance in m)</label>
+                                        <input type="number" class="form-control" tabindex="1">
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 form-group"><label>Distance from main
+                                            River/Tributarywith name of the river (Approximatedistance in m)
+                                        </label>
+                                        <input type="number" class="form-control" tabindex="1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="row no-gutters">
+                                            <h4>Number of existing STPs
+                                                under the jurisdiction of
+                                                Town/City authority and
+                                                their capacity</h4>
+                                            <div class="col-md-6">
+                                                <label>Number of STPs</label>
+                                                <input type="text" class="form-control" tabindex="1">
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label>Total Sewage Treatment Capacity</label>
+                                                <input type="text" class="form-control" tabindex="1">
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-12 col-sm-12 form-group">
+                                        <label>Remarks, if any(e.g. FSR, approved CDL rate for district)
+                                            etc.</label>
+                                        <textarea type="text" class="form-control" tabindex="13"> </textarea>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 form-group">
+                                       
+                                        <table class="table table-sm">
+                                                <caption>GPS coordinates of the site at all the corners(As per the shape of
+                                                        site, minimum 3points are required)(Record in decimal degrees: record up
+                                                        to 6 decimal places-e.g.Latitude:17.555202°Longitude:78.443713°)</caption>
+                                            <thead>
+                                                <th></th>
+                                                <th class="text-center">Corner 1</th>
+                                                <th class="text-center">Corner 2</th>
+                                                <th class="text-center">Corner 3</th>
+                                                <th class="text-center">Corner 4</th>
+                                                <th class="text-center">Corner 5</th>
+                                                <th class="text-center">Corner 6</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="font-bold">Latitude</td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-bold">Longitude</td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                    <td><input type="text" placeholder=""></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 form-group">
+                                        <div class="i-checks">
+                                            <label> ROUGH SKETCH OF TREATMENT SITE / MAP (AS AN ATTACHMENT)</label>
+                                            <label> <input type="radio" value="option1" name="cc">
+                                                Yes</label>
+                                            <label> <input type="radio" value="option2" name="cc">
+                                                No</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12 form-group">
+                                        <div class="i-checks">
+                                            <label>CURRENT PHOTOGRAPH (Share photo in the Co-ordinator’sWhatsApp
+                                                group</label>
+                                            <label> <input type="radio" value="option1" name="dd">
+                                                Yes</label>
+                                            <label> <input type="radio" value="option2" name="dd"> No </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 form-group">
+                                        <table class="table table-sm">
+                                            <caption>SITE SPECIFIC ACTIVITIES</caption>
+                                            <thead>
+                                                <th>Sl. No. </th>
+                                                <th>Year</th>
+                                                <th>NAME OF ACTIVITIES</th>
+                                                <th>FINANCIAL OUTLAY (IN LAKH RS.)</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                    <td><input class="form-control" type="text" placeholder=""></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-12 col-sm-12 form-group">
+                                            <table class="table table-sm">
+                                                <caption>Budget proposed for supporting
+                                                        activities (Approximate in Lakh Rs.) </caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th style="width:300px"> </th>
+                                                        <th class="text-center">Year 01</th>
+                                                        <th class="text-center">Year 02</th>
+                                                        <th class="text-center">Year 03</th>
+                                                        <th class="text-center">Year 04</th>
+                                                        <th class="text-center">Year 05</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Capacity building</td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Awareness raising</td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Adaptive R & D</td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Monitoring and evaluation</td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Miscelaneous activity</td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="font-bold">Total</td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                        <td><input type="text" class="form-control" placeholder=""></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <br />
+                                        <div class="col-sm-4 col-sm-offset-2 mt-4">
+                                            <button class="btn btn-white btn-sm" type="submit">Cancel</button>
+                                            <button class="btn btn-primary btn-sm" type="submit">Save changes</button>
+                                        </div>
+
+                            </div>
+                            </form>
+                            <!-- planned for footer if any <div
+                                                    class="footer">
+                                                    <div class="float-right">
+                                                        10GB of <strong>250GB</strong> Free.
+                                                    </div>
+                                                    <div>
+                                                        <strong>Copyright</strong> Example Company &copy; 2014-2018
+                                                    </div>
+                                        </div> -->
+                        </div>
+                    </div>
+
+                    <!-- Mainly scripts -->
+                    <script src="js/jquery-3.1.1.min.js"></script>
+                    <script src="js/popper.min.js"></script>
+                    <script src="js/bootstrap.js"></script>
+                    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+                    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+                    <!-- Chosen -->
+                    <script src="js/plugins/chosen/chosen.jquery.js"></script>
+                    <!-- Sweet alert -->
+                    <script src="js/plugins/sweetalert/sweetalert.min.js"></script>
+                    <!-- iCheck -->
+                    <script src="js/plugins/iCheck/icheck.min.js"></script>
+                    <!-- Custom and plugin javascript -->
+                    <script src="js/inspinia.js"></script>
+                    <script src="js/plugins/pace/pace.min.js"></script>
+                    <script>
+                        $(document).ready(function () {
+                            $('.i-checks').iCheck({
+                                checkboxClass: 'icheckbox_square-green',
+                                radioClass: 'iradio_square-green',
+                            });
+                            // Add slimscroll to element
+                            $('.scroll_content').slimscroll({
+                                height: '330px'
+                            })
+                            $('.deletedata').click(function () {
+                                swal({
+                                        title: "Are you sure?",
+                                        text: "Your will not be able to recover this record!",
+                                        type: "warning",
+                                        showCancelButton: true,
+                                        confirmButtonColor: "#DD6B55",
+                                        confirmButtonText: "Yes, delete it!",
+                                        cancelButtonText: "No, keep user",
+                                        closeOnConfirm: false,
+                                        closeOnCancel: false
+                                    },
+                                    function (isConfirm) {
+                                        if (isConfirm) {
+                                            swal("Deleted!", "Record has been deleted.",
+                                                "success");
+                                        } else {
+                                            swal("Cancelled", "Record is not deleted :)",
+                                                "error");
+                                        }
+                                    });
+                            });
+                        });
+                    </script>
+                    <script>
+                        $(document).ready($('.chosen-select').chosen({
+                            width: "100%"
+                        }));
+                    </script>
+</body>
+
+</html>
